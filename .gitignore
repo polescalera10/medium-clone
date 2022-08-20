@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+medium-clone/node_modules
+
 # testing
 /coverage
 
@@ -14,7 +16,6 @@
 
 # production
 /build
-/medium-clone
 
 # misc
 .DS_Store
