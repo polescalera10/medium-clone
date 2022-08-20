@@ -1,3 +1,33 @@
+# Medium Clone
+
+Everyone knows about the Medium Blog where you can go and post anything you want.
+
+You can take a look at the result [here](https://medium-clone-polescalera.vercel.app/)
+
+Well, here's the clone using the stack:
+
+- NextJS (React Framework)
+- Sanity (as CMS)
+- TailwindCSS 
+
+## How to make it work
+
+Checking the project files you'll notice that there's `medium-clone` folder inside the project that's also named the same.
+That folder is for Sanity.
+
+So, first of all:
+
+- Clone this repo, cd into it and `npm install`
+- After the installation, cd into `medium-clone` and again, `npm install` as it's another project with its own dependencies.
+- Notice that you'll need a FREE account for Sanity.
+- Env Variables that you need to reproduce this project (you can find them once you are logged in Sanity and created a project):
+  - NEXT_PUBLIC_SANITY_DATASET
+  - NEXT_PUBLIC_SANITY_PROJECT_ID
+  - SANITY_API_TOKEN
+- Run app by `yarn dev`
+- Run local sanity by cd into sanity folder (medium-clone) and `sanity start` - notice that you will need sanity installed globally on your PC
+
+
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
