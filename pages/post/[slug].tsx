@@ -20,17 +20,15 @@ interface IFormInput {
 function Post({ post }: Props) {
   const [submitted, setSubmitted] = useState(false)
 
-  const { register, handleSubmit, formState: { errors } } = useForm<IFormInput>()
+  const { register, handleSubmit, formState: { errors }} = useForm<IFormInput>()
 
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
     fetch('/api/createComment', {
       method: 'POST',
       body: JSON.stringify(data)
     }).then(() => {
-      console.log(data)
       setSubmitted(true)
     }).catch((err) => {
-      console.log(err)
       setSubmitted(false)
     })
   }

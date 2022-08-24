@@ -6,7 +6,7 @@ You can take a look at the result [here](https://medium-clone-polescalera.vercel
 
 Well, here's the clone using the stack:
 
-- NextJS (React Framework)
+- NextJS + TypeScript (React Framework)
 - Sanity (as CMS)
 - TailwindCSS 
 
